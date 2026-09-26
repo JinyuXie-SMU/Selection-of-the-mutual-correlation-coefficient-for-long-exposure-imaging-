@@ -76,7 +76,6 @@ No other dependencies are required. All Monte Carlo runs use fixed seeds, so res
 
 ### `fig12_largescale_images/` → Fig. 12
 - **Scripts:** `run4_largescale_imaging.py` (generates the degraded images and the joint-OTF caches `mc_otf_jt_kc_*.npz`, shared with Fig. 13), then `run4b_figures.py` (renders the figure; also reads `run6_lambdac_sweep.json` from `fig10.../` and `run5_multiseed.json`, included here).
-- **Data:** `img_mc_*.npy` (Monte Carlo degraded images), `img_an1_*.npy` (analytic model with p = 1), `img_anE_*.npy` (analytic model with weighted effective p), for the RTT and Airplane targets at λc = 1.0 m and 0.5 m. `run5_multiseed.json` holds the bias-cancelled multi-seed image fits (M = 150) used for the p annotations; `revision_fig12_residuals.json` records the residual statistics of the ×20 residual columns. Also included for the Fig. 13 panel of `run4b_figures.py`: `run4_results.json`, the three `run4_pfit_*.json` tables, `mc_otf_jt_kc_*.npz`, `mc_otf_single.npz`, `run2_results.json`, `run6_lambdac_sweep.json`, `revision_psnr_fixed_peak.json`, and the two test images.
 - **Output:** `jt_images_largescale.png` (4 rows × 6 columns, with shared residual colorbar).
 
 ### `fig13_p_selection_summary/` → Fig. 13
